@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"gameframe"},{"p":"<Unnamed>","l":"gamepanel"},{"p":"<Unnamed>","l":"gamepanel.MyKeyAdapter"},{"p":"<Unnamed>","l":"snakegame"}];updateSearchResults();
