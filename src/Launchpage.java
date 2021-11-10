@@ -5,7 +5,6 @@ import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import java.awt.*;
 
 public class Launchpage implements ActionListener {
@@ -18,17 +17,14 @@ JButton tictac = new JButton("Play");
 Launchpage()
 {
 	JFrame frame = new JFrame();
-
-	//Main page title
-	JPanel title_panel = new JPanel();
-	JLabel textfield = new JLabel();
-	textfield.setForeground(new Color(25,255,0));
-	textfield.setFont(new Font("Ink Free",Font.BOLD,75));
-	textfield.setBounds(620, 10, 100, 30);
-	textfield.setText("Arcade Games");
-	textfield.setOpaque(true);
-	title_panel.add(textfield);
-
+	JLabel l;
+	l = new JLabel("Arcade Games");
+	l.setForeground(Color.GREEN);
+	l.setBounds(525, 50, 300, 50);
+	l.setFont(new Font("MV Boli", Font.BOLD, 30));
+	frame.add(l,BorderLayout.CENTER);
+	frame.setLayout(null);
+	frame.setVisible(true);
 
 	snakebutton.setBounds(180,675,100,30);
 	snakebutton.setBackground(Color.BLUE);
@@ -53,8 +49,8 @@ Launchpage()
 	frame.pack();
 	frame.setVisible(true);
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	frame.setResizable(true);
-	frame.setSize(1280,900);
+	frame.setResizable(false);
+	frame.setSize(1400,1200);
 	frame.getContentPane().setBackground(Color.BLACK);
 	frame.setLayout(null);
 	frame.setVisible(true);
