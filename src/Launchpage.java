@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.*;
-public class Launchpage implements ActionListener {
+public class Launchpage  extends javax.swing.JFrame implements ActionListener {
 private static final int EXIT_ON_CLOSE = 0;
 JFrame frame = new JFrame();
 JButton snakebutton = new JButton("Play");
@@ -39,16 +39,20 @@ Launchpage()
     tictac.setForeground(Color.WHITE);
 	tictac.setFocusable(true);
 	tictac.addActionListener(this);
+	
 	frame.setTitle("Arcade Games");
-	ImageIcon icon = new ImageIcon("C:\\Users\\Charan Vignesh\\My Programs\\Java\\Snakegame\\src\\Background.gif");
+	ImageIcon icon = new ImageIcon("C:\\Users\\Charan Vignesh\\My Programs\\Java\\Snakegame\\src\\BG.gif");
 	JLabel label = new JLabel(icon);
+	label.setBounds(0, 0, 1280, 720);
 	frame.add(label);
+
+
 	frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
 	frame.pack();
 	frame.setVisible(true);
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	frame.setResizable(false);
-	frame.setSize(1280,1000);
+	frame.setSize(1280,800);
 	frame.getContentPane().setBackground(Color.BLACK);
 	frame.setLayout(null);
 	frame.setVisible(true);
