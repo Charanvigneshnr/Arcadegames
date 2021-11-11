@@ -24,26 +24,26 @@ Launchpage()
 	frame.add(l,BorderLayout.CENTER);
 	frame.setLayout(null);
 	frame.setVisible(true);
-	snakebutton.setBounds(180,675,100,30);
+	snakebutton.setBounds(180,570,100,30);
 	snakebutton.setBackground(Color.BLUE);
     snakebutton.setForeground(Color.WHITE);
 	snakebutton.setFocusable(true);
 	snakebutton.addActionListener(this);
-	pinball.setBounds(590,675,100,30);
+	pinball.setBounds(590,570,100,30);
 	pinball.setBackground(Color.BLUE);
     pinball.setForeground(Color.WHITE);
 	pinball.setFocusable(true);
 	pinball.addActionListener(this);
-	tictac.setBounds(970,675,100,30);
+	tictac.setBounds(970,570,100,30);
 	tictac.setBackground(Color.BLUE);
     tictac.setForeground(Color.WHITE);
 	tictac.setFocusable(true);
 	tictac.addActionListener(this);
 	
 	frame.setTitle("Arcade Games");
-	ImageIcon icon = new ImageIcon("C:\\Users\\Charan Vignesh\\My Programs\\Java\\Snakegame\\src\\BG.gif");
+	ImageIcon icon = new ImageIcon("C:\\Users\\Charan Vignesh\\My Programs\\Java\\Snakegame\\src\\Crop.gif");
 	JLabel label = new JLabel(icon);
-	label.setBounds(0, 0, 1280, 720);
+	label.setBounds(0, 120, 1270, 380);
 	frame.add(label);
 
 
@@ -52,7 +52,7 @@ Launchpage()
 	frame.setVisible(true);
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	frame.setResizable(false);
-	frame.setSize(1280,800);
+	frame.setSize(1280,720);
 	frame.getContentPane().setBackground(Color.BLACK);
 	frame.setLayout(null);
 	frame.setVisible(true);
